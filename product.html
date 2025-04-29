@@ -10,78 +10,86 @@
 
 <body>
     <!-- navebar -->
-    <nav class="bg-green-100 p-3 flex justify-between shadow-xl  sticky top-0 z-10">
-        <div>
-            <h2 class="font-bold text-3x1">GREENDEN</h2>
-        </div>
-        <div>
-            <ul class="flex  gap-2 ">
-                <li class="hover:underline hover:text-black">
-                    <a href="index.html">home</a>
-                </li>
-                <li class="hover:underline hover:text-black">
-                    <a href="#">product</a>
-                </li>
-                <li class="hover:underline hover:text-black">
-                    <a href="contact.html">contact</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="bg-green-100 p-3 flex items-center justify-between  shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">GREENDEN</h1>
+        <svg id="menubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-5 h-5  md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class=" gap-5 text-gray-600 hidden md:flex ">
+            <li class="hover:underline hover:text-black"><a href="index.html">home</a></li>
+            <li class="hover:underline   hover:text-black"><a href="product.html">products</a></li>
+            <li class="hover:underline hover:text-black"><a href="contact.html">contact</a></li>
+        </ul>
     </nav>
+    <!-- side bar -->
+    <section id="list" class="bg bg-green-100 fixed top-0   z-20 transition-all duration-1000 "
+        style="height:100vh; width:40%; right:-50%;">
+        <div class="text-right p-5">
+            <p id="side" class="inline  cursor-pointer">X</p>
+        </div>
+        <ul class=" gap-5 text-gray-600   " style="display:flex;flex-direction:column;">
+            <li class="hover:underline hover:text-black"><a href="index.html">home</a></li>
+            <li class="hover:underline   hover:text-black"><a href="product.html">products</a></li>
+            <li class="hover:underline hover:text-black"><a href="contact.html">contact</a></li>
+        </ul>
+    </section>
     <!-- our products -->
     <section>
         <div class="text-center">
             <h2 class="font-bold  text-3x1  mt-4">Our Products</h2>
 
-            <input class="m-4 p-1 border border-black w-4/6" placeholder="search  more products here......">
+            <input id="search" class="m-4 p-1 border border-black w-4/6" placeholder="search  more products here......">
 
         </div>
-</section>
-<!-- images -->
- <section class="text-center">
-    <div class=" grid grid-cols-2  md:grid-cols-4   mt-4 gap-2  ">
-<div>
-    <img src="image/seller-R.png" class="inline   hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>rose</p>
-    <p>$250</p>
-</div>
-<div>
-    <img src="image/seller-R2.png" class="inline  hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>Red rose</p>
-    <p>$300</p>
-</div>
-<div>
-    <img src="image/seller-sp.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>green leaf</p>
-    <p>$500</p>
-</div>
-<div>
-    <img src="image/seller-V.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>color rose</p>
-    <p>$250</p>
-</div>
-<div>
-    <img src="image/_hanging pot.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>green</p>
-    <p>$250</p>
-</div>
-<div>
-    <img src="image/round pot.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>color rose</p>
-    <p>$250</p>
-</div>
-<div>
-    <img src="image/lilly pot.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
-    <p>hanging rose</p>
-    <p>$250</p>
-</div>
-<div>
-    <img src="image/seller-R2.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
-    <p> rose</p>
-    <p>$250</p>
-</div>
-    </div>
- </section>
+    </section>
+    <!-- images -->
+    <section class="text-center">
+        <div  id="product-container"class=" grid grid-cols-2  md:grid-cols-4   mt-4 gap-2  ">
+            <div>
+                <img src="image/seller-R.png" class="inline   hover:shadow-xl  transform hover:translate-y-2 ">
+                <h1>rose</h1>
+                <p>$250</p>
+            </div>
+            <div>
+                <img src="image/seller-R2.png" class="inline  hover:shadow-xl  transform hover:translate-y-2 ">
+                <h1>Red rose</h1>
+                <p>$300</p>
+            </div>
+            <div>
+                <img src="image/seller-sp.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
+                <h1>green leaf</h1>
+                <p>$500</p>
+            </div>
+            <div>
+                <img src="image/seller-V.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
+                <h1>color rose</h1>
+                <p>$250</p>
+            </div>
+            <div>
+                <img src="image/_hanging pot.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
+                <p>green</p>
+                <p>$250</p>
+            </div>
+            <div>
+                <img src="image/round pot.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
+                <p>color rose</p>
+                <p>$250</p>
+            </div>
+            <div>
+                <img src="image/lilly pot.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
+                <p>hanging rose</p>
+                <p>$250</p>
+            </div>
+            <div>
+                <img src="image/seller-R2.png" class="inline hover:shadow-xl  transform hover:translate-y-2 ">
+                <h1> rose</h1>
+                <p>$250</p>
+            </div>
+        </div>
+    </section>
+    <script src="product.js"></script>
 </body>
 
 </html>

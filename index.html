@@ -12,17 +12,28 @@
     <!-- responsive nav desing -->
     <nav class="bg-green-100 p-3 flex items-center justify-between  shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg  id="menubar"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-5 h-5  md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
         <ul class=" gap-5 text-gray-600 hidden md:flex ">
-            <li class="hover:underline hover:text-black"><a href="#">home</a></li>
+            <li class="hover:underline hover:text-black"><a href="index.html">home</a></li>
             <li class="hover:underline   hover:text-black"><a href="product.html">products</a></li>
-            <li class="hover:underline hover:text-black"><a href="#">contact</a></li>
+            <li class="hover:underline hover:text-black"><a href="contact.html">contact</a></li>
         </ul>
     </nav>
+     <!-- side navigation -->
+     <section  id="list" class="bg bg-green-100 fixed top-0   z-20 transition-all duration-1000  md:hidden" style="height:100vh; width:40%; right:-50%;">
+        <div class="text-right p-5">
+            <p  id="side"class="inline  cursor-pointer" >X</p>
+        </div>
+        <ul class=" gap-5 text-gray-600   "style="display:flex;flex-direction:column;text-align:center;" >
+            <li class="hover:underline hover:text-black"><a href="index.html">home</a></li>
+            <li class="hover:underline   hover:text-black"><a href="product.html">products</a></li>
+            <li class="hover:underline hover:text-black"><a href="contact.html">contact</a></li>
+        </ul>
+     </section>
     <!-- hedaer  -->
     <section class="bg-green-100 p-4 flex justify-center m-10">
         <div>
@@ -161,5 +172,6 @@
         <p class="mt-4">&copy; 2025 Greenday.com</p>
       </div>
 </body>
+<script src="main.js"></script>
 
 </html>
